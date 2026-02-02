@@ -1,0 +1,10 @@
+# Q26. Convert a decimal number to binary using loops. 
+num = int(input("Enter a decimal number: "))
+binary = ""
+if num == 0:
+    binary = "0"
+while num > 0:
+    remainder = num % 2
+    binary = str(remainder) + binary
+    num = num // 2
+print("Binary representation:", binary)
